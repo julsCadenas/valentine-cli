@@ -92,7 +92,7 @@ const Terminal = () => {
     };
 
     return (
-        <main className="w-[1300px] h-[690px] bg-background text-green-400 p-4 font-mono">
+        <main className="w-full h-full max-w-[1300px] max-h-[690px] bg-background text-green-400 p-4 font-mono text-sm md:text-base">
             <section ref={terminalRef} className="overflow-y-auto h-[600px]">
                 {history.map((line, index) => (
                     <div key={index}>{line}</div>
@@ -100,7 +100,7 @@ const Terminal = () => {
                 {/* Current input line */}
                 <div className="flex">
                     <span className="mr-2 text-green-400">{`@${username}:/${currentPath.join("/")}$ `}</span>
-                    <form onSubmit={handleSubmit} className="w-5/6">
+                    <form onSubmit={handleSubmit} className="w-32 md:w-5/6">
                         <input type="text" value={input} onChange={(e) => setInput(e.target.value)} className="bg-transparent text-green-400 outline-none w-full" autoFocus />
                     </form>
                 </div>

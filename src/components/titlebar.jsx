@@ -12,7 +12,7 @@ const TitleBar = () => {
         </section>
 
         {/* message */}
-        <section className='absolute left-1/2 -translate-x-1/3 md:-translate-x-1/2 text-base md:text-lg'>
+        <section className='absolute left-1/2 -translate-x-1/3 md:-translate-x-1/2 text-sm md:text-lg'>
             <strong>Happy Valentine's Day!</strong>
         </section>
 
