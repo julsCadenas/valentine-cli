@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Valentine's Command line",
   description: "Happy Valentine's day!",
+  icons: {
+    icon: "/favicon.ico",
+  }
 };
 
 export default function RootLayout({ children }) {
